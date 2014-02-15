@@ -1,0 +1,23 @@
+extends layout
+
+block content
+   div.container
+
+    h1= title
+    p Welcome to #{title}
+        div.col-md-3
+            div.onoffswitch
+                input.onoffswitch-checkbox(type="checkbox" name="onoffswitch" id="myonoffswitch" checked)
+                label.onoffswitch-label(for="myonoffswitch")
+                    div.onoffswitch-inner
+                    div.onoffswitch-switch
+
+            input(type="range" min="21" max="80")
+
+//- <div class="onoffswitch">
+//-     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+//-     <label class="onoffswitch-label" for="myonoffswitch">
+//-         <div class="onoffswitch-inner"></div>
+//-         <div class="onoffswitch-switch"></div>
+//-     </label>
+//- </div>
