@@ -5,7 +5,7 @@
 exports.index = function(req, res) {
     console.log(req.query);
     var config = req.query;
-    config.title = 'Drinky';
+    config.title = 'SoberUp';
 
     res.render('index', config);
 };

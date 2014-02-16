@@ -4,11 +4,15 @@
 }
 
 #weight {
-	width: 130px;
+	width: 200px;
 }
 #weight-slider .slider-selection {
 	background: #428bca;
 }
 #weight-slider .slider-handle {
 	opacity: 1;
+}
+
+body {
+    background-color: rgb(220, 226, 236) !important;
 }
