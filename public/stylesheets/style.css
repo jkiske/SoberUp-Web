@@ -3,8 +3,8 @@
 	width: 500px;
 }
 
-#weight {
-	width: 200px;
+.slider {
+	width: 80% !important;
 }
 #weight-slider .slider-selection {
 	background: #428bca;
@@ -15,4 +15,8 @@
 
 body {
     background-color: rgb(220, 226, 236) !important;
+}
+
+#weight_val {
+	font-size: 1.1em;
 }
