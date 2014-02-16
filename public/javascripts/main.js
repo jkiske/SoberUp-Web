@@ -8,8 +8,10 @@ $(document).ready(function() {
     }).on("slideStop", function(ev) {
         $("#weight_val").text(weight_slider.data().value);
     });
+    if (weight_slider.data().sliderValue == undefined)
+        weight_slider.data().slider.setValue(150);
 
-    $("#weight_val").text(weight_slider.data().sliderValue);
+    $("#weight_val").text(weight_slider.data().slider.getValue());
 
     $("#save-btn").click(function(e) {
         var configuration = {
