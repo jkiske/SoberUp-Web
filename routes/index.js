@@ -1,8 +1,11 @@
-
 /*
  * GET home page.
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Drinky' });
+exports.index = function(req, res) {
+    console.log(req.query);
+    var config = req.query;
+    config.title = 'Drinky';
+
+    res.render('index', config);
 };

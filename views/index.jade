@@ -2,22 +2,26 @@ extends layout
 
 block content
    div.container
+        h1= title
+        form.form-horizontal
+            div.form-group
+                label.col-md-4.control-label Weight (lbs):
+                div.col-md-8
+                    div#weight.slider(data-slider-id="weight-slider" data-slider-value=weight)
 
-    h1= title
-    p Welcome to #{title}
-        div.col-md-3
-            div.onoffswitch
-                input.onoffswitch-checkbox(type="checkbox" name="onoffswitch" id="myonoffswitch" checked)
-                label.onoffswitch-label(for="myonoffswitch")
-                    div.onoffswitch-inner
-                    div.onoffswitch-switch
+            div.form-group
+                label.col-md-4.control-label Gender:
+                div.col-md-8
+                    div#gender.btn-group(data-toggle="buttons")
+                        if gender == 'male'
+                            label#male.btn.btn-primary.active Male
+                                input(type="radio")
+                            label#female.btn.btn-primary Female
+                                input(type="radio")
+                        else
+                            label#male.btn.btn-primary Male
+                                input(type="radio")
+                            label#female.btn.btn-primary.active Female
+                                input(type="radio")
 
-            input(type="range" min="21" max="80")
-
-//- <div class="onoffswitch">
-//-     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-//-     <label class="onoffswitch-label" for="myonoffswitch">
-//-         <div class="onoffswitch-inner"></div>
-//-         <div class="onoffswitch-switch"></div>
-//-     </label>
-//- </div>
+        div#save-btn.btn.btn-primary Save
