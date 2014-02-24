@@ -3,27 +3,37 @@ extends layout
 block content
    div.container
         h1= title
-        form.form-horizontal
-            div.form-group
-                label.col-md-4.control-label Weight (lbs):
-                div.col-md-8
-                    div#weight.slider(data-slider-id="weight-slider" data-slider-value=weight)
-                    h4
-                        div#weight_val.label.label-primary 150
+        if signedEULA == 'false' || signedEULA === undefined
+            div#eula
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla sapien erat, ac eleifend magna pretium vitae. Aenean porttitor, risus id luctus mattis, risus nunc cursus eros, a molestie lacus leo quis lorem. Praesent varius at lorem ut tempor. Etiam est dolor, cursus id mauris vitae, condimentum lacinia odio. Nunc semper mollis erat, nec blandit tellus posuere id. Aliquam consequat ante nec risus feugiat, id porttitor ante adipiscing. Vestibulum nec ipsum vehicula, feugiat mauris nec, hendrerit nibh. Fusce commodo, elit eget fringilla adipiscing, augue augue egestas eros, sed lacinia purus nisi vel quam.
+                p Ut porta purus in lacus pharetra scelerisque at vel erat. Sed et tellus molestie, porta purus ac, suscipit mauris. Aenean posuere fermentum tincidunt. Vivamus cursus sapien a molestie tincidunt. Vivamus malesuada lectus sed lectus tempus euismod. Nam lacinia, nisi a aliquam feugiat, nulla felis dapibus tortor, ac auctor mauris neque sed libero. Cras facilisis leo at eros cursus, eu dictum ante commodo. Nam at neque mi. Curabitur porta sollicitudin sodales. Phasellus nulla eros, blandit vel gravida a, blandit placerat ligula. Nullam lacus arcu, sodales at ultrices sed, gravida in dolor. Nullam vitae velit non nulla sagittis aliquet eu ultricies tortor. Morbi iaculis et justo quis tempus. Nunc semper mi a orci laoreet accumsan. Etiam scelerisque, odio in vulputate sagittis, justo diam ullamcorper erat, et euismod dolor diam vel ipsum. Aenean bibendum eu justo in egestas.
+                p Nam pretium arcu in felis cursus, ut vulputate quam placerat. Cras ut venenatis dolor. Sed pharetra orci eu mauris consectetur, vel porttitor purus euismod. Aliquam eros ipsum, vehicula vel magna vehicula, consequat viverra velit. Nulla euismod mollis purus, eget consectetur ante hendrerit vitae. Donec aliquam tempus velit vitae vulputate. Mauris porta, diam eget ornare mollis, justo est pulvinar purus, a vehicula massa tellus sed augue. Vivamus vitae tortor sed eros feugiat scelerisque a sed tellus.
+                p Donec elementum id arcu ac accumsan. Curabitur a eros sed turpis consectetur dapibus. Vestibulum commodo consectetur est. Aenean aliquet congue tortor facilisis mattis. Vivamus felis sapien, eleifend vitae urna ut, porttitor fermentum tortor. Duis pretium turpis nunc, vitae varius mi volutpat sit amet. Curabitur consequat arcu et eros molestie tempor. In luctus vehicula metus ac tristique. Nam mollis elit vel turpis pretium, nec sodales sapien interdum. Fusce molestie nulla mauris, quis auctor purus dictum varius. Etiam vitae magna fermentum, tempus nisi id, sagittis eros. Cras at est sit amet lacus tincidunt facilisis. Maecenas adipiscing risus in quam consectetur, ac gravida tortor blandit. Nam et aliquam leo.
+                p Cras a justo orci. Sed semper magna sit amet lacinia dignissim. In pellentesque erat nec nunc ultricies, eu eleifend eros consequat. Nulla bibendum massa odio, quis cursus risus malesuada et. Nam ut lacus non elit dapibus luctus. Fusce nec condimentum magna. Integer quis molestie nunc. In feugiat cursus tempor. Donec molestie leo id est fringilla ultricies. Quisque urna erat, consequat at convallis at, viverra vitae nibh. Phasellus quis enim ac elit scelerisque euismod. Nam dictum tincidunt ornare.
+                button#acceptEULA.btn.btn-default.btn-success.btn-lg Accept
 
-            div.form-group
-                label.col-md-4.control-label Gender:
-                div.col-md-8
-                    div#gender.btn-group(data-toggle="buttons")
-                        if gender == 'male'
-                            label#male.btn.btn-default.btn-success.btn-lg.active Male
-                                input(type="radio")
-                            label#female.btn.btn-default.btn-success.btn-lg Female
-                                input(type="radio")
-                        else
-                            label#male.btn.btn-default.btn-success.btn-lg Male
-                                input(type="radio")
-                            label#female.btn.btn-default.btn-lg.btn-success.active Female
-                                input(type="radio")
+        div#settings.hide
+            form.form-horizontal
+                div.form-group
+                    label.col-md-4.control-label Weight (lbs):
+                    div.col-md-8
+                        div#weight.slider(data-slider-id="weight-slider" data-slider-value=weight)
+                        h4
+                            div#weight_val.label.label-primary 150
 
-        div#save-btn.btn.btn-danger.btn-lg Save
+                div.form-group
+                    label.col-md-4.control-label Gender:
+                    div.col-md-8
+                        div#gender.btn-group(data-toggle="buttons")
+                            if gender == 'male'
+                                label#male.btn.btn-default.btn-success.btn-lg.active Male
+                                    input(type="radio")
+                                label#female.btn.btn-default.btn-success.btn-lg Female
+                                    input(type="radio")
+                            else
+                                label#male.btn.btn-default.btn-success.btn-lg Male
+                                    input(type="radio")
+                                label#female.btn.btn-default.btn-lg.btn-success.active Female
+                                    input(type="radio")
+
+            div#save-btn.btn.btn-danger.btn-lg Save

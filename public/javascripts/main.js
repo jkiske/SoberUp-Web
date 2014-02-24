@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    $eula = $("#eula");
+    $settings = $("#settings");
+
+    if ($eula.length === 0) {
+        $settings.removeClass("hide");
+    } else {
+        $("#acceptEULA").click(function() {
+            $eula.remove();
+            $settings.removeClass("hide");
+        });
+    }
+
     var weight_slider = $('#weight').slider({
         min: 0,
         tooltip: false,
@@ -16,16 +28,12 @@ $(document).ready(function() {
     $("#save-btn").click(function(e) {
         var configuration = {
             weight: parseInt($("#weight_val").text()),
-            gender: $("#male").hasClass("active") ? "male" : "female"
+            gender: $("#male").hasClass("active") ? "male" : "female",
+            signedEULA: $("#eula").length === 0
         };
         console.log(configuration);
         window.location.href = "pebblejs://close#" + encodeURIComponent(JSON.stringify(configuration));
 
-        // Pebble.addEventListener("webviewclosed",
-        //   function(e) {
-        //     var configuration = JSON.parse(decodeURIComponent(e.response));
-        //     console.log("Configuration window returned: ", JSON.stringify(configuration));
-        //   }
-        // );
     });
+
 });
