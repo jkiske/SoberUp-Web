@@ -23,3 +23,14 @@ body {
 #weight_val {
 	font-size: 1.1em;
 }
+
+.eula-text {
+	display: block;
+	height: 350px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom: 1em;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 1em;
+	padding: 1em;
+}

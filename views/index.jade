@@ -4,27 +4,55 @@ block content
    div.container
         h1= title
         if signedEULA == 'false' || signedEULA === undefined
-            div#eula
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla sapien erat, ac eleifend magna pretium vitae. Aenean porttitor, risus id luctus mattis, risus nunc cursus eros, a molestie lacus leo quis lorem. Praesent varius at lorem ut tempor. Etiam est dolor, cursus id mauris vitae, condimentum lacinia odio. Nunc semper mollis erat, nec blandit tellus posuere id. Aliquam consequat ante nec risus feugiat, id porttitor ante adipiscing. Vestibulum nec ipsum vehicula, feugiat mauris nec, hendrerit nibh. Fusce commodo, elit eget fringilla adipiscing, augue augue egestas eros, sed lacinia purus nisi vel quam.
-                p Ut porta purus in lacus pharetra scelerisque at vel erat. Sed et tellus molestie, porta purus ac, suscipit mauris. Aenean posuere fermentum tincidunt. Vivamus cursus sapien a molestie tincidunt. Vivamus malesuada lectus sed lectus tempus euismod. Nam lacinia, nisi a aliquam feugiat, nulla felis dapibus tortor, ac auctor mauris neque sed libero. Cras facilisis leo at eros cursus, eu dictum ante commodo. Nam at neque mi. Curabitur porta sollicitudin sodales. Phasellus nulla eros, blandit vel gravida a, blandit placerat ligula. Nullam lacus arcu, sodales at ultrices sed, gravida in dolor. Nullam vitae velit non nulla sagittis aliquet eu ultricies tortor. Morbi iaculis et justo quis tempus. Nunc semper mi a orci laoreet accumsan. Etiam scelerisque, odio in vulputate sagittis, justo diam ullamcorper erat, et euismod dolor diam vel ipsum. Aenean bibendum eu justo in egestas.
-                p Nam pretium arcu in felis cursus, ut vulputate quam placerat. Cras ut venenatis dolor. Sed pharetra orci eu mauris consectetur, vel porttitor purus euismod. Aliquam eros ipsum, vehicula vel magna vehicula, consequat viverra velit. Nulla euismod mollis purus, eget consectetur ante hendrerit vitae. Donec aliquam tempus velit vitae vulputate. Mauris porta, diam eget ornare mollis, justo est pulvinar purus, a vehicula massa tellus sed augue. Vivamus vitae tortor sed eros feugiat scelerisque a sed tellus.
-                p Donec elementum id arcu ac accumsan. Curabitur a eros sed turpis consectetur dapibus. Vestibulum commodo consectetur est. Aenean aliquet congue tortor facilisis mattis. Vivamus felis sapien, eleifend vitae urna ut, porttitor fermentum tortor. Duis pretium turpis nunc, vitae varius mi volutpat sit amet. Curabitur consequat arcu et eros molestie tempor. In luctus vehicula metus ac tristique. Nam mollis elit vel turpis pretium, nec sodales sapien interdum. Fusce molestie nulla mauris, quis auctor purus dictum varius. Etiam vitae magna fermentum, tempus nisi id, sagittis eros. Cras at est sit amet lacus tincidunt facilisis. Maecenas adipiscing risus in quam consectetur, ac gravida tortor blandit. Nam et aliquam leo.
-                p Cras a justo orci. Sed semper magna sit amet lacinia dignissim. In pellentesque erat nec nunc ultricies, eu eleifend eros consequat. Nulla bibendum massa odio, quis cursus risus malesuada et. Nam ut lacus non elit dapibus luctus. Fusce nec condimentum magna. Integer quis molestie nunc. In feugiat cursus tempor. Donec molestie leo id est fringilla ultricies. Quisque urna erat, consequat at convallis at, viverra vitae nibh. Phasellus quis enim ac elit scelerisque euismod. Nam dictum tincidunt ornare.
+            #eula
+                .eula-text
+                    :markdown
+                        ### Novelty Use Only
+
+                        User agrees that SoberUp is an application for novelty and entertainment use only and will not be used in any manner to determine if user or any other person is legally intoxicated.  AlumniLikeTurtles urges the user to never become intoxicated or drink to excess, and further urges anyone under the legal age to not consume alcohol at all. 
+
+                        #### GOVERNMENT WARNING:
+
+                        1. According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. 
+
+                        2. Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems”
+
+                        #### Disclaimer
+
+                        AlumniLikeTurtles and any and all manufacturers, retailers, distributors and sellers of SoberUp make no warranties, express or implied, as to the ability of the application to determine whether a user of this device is legally intoxicated, and AlumniLikeTurtles expressly disclaims any liability for incidental, special, or consequential damages of any nature.
+
+                        Decisions and/or actions based upon the reading of this application shall be entirely at the user’s own risk.
+
+                        AlumniLikeTurtles and any and all manufacturers, retailers, distributors and sellers of the application make no warranties, express or implied, that any modification or adjustment thereof is a legal protector or evidence or defense against any police or public procedure or judicial or investigative proceedings in any jurisdiction.
+
+                        AlumniLikeTurtles and any and all manufacturers, retailers, or sellers of the application assume no responsibility for users who test negative and later show that they are under the influence of alcohol or are proven to be intoxicated by alcohol.
+
+                        #### Exclusions, Limitations, and Disclaimers
+
+                        AlumniLikeTurtles makes no warranties, express or implied, as to the ability of SoberUp to determine whether, or the extent to which, a User’s mental or physical functioning, or judgment, may be impaired, including whether the User is intoxicated under any definition of that word. AlumniLikeTurtles expressly disclaims any liability for direct, indirect, incidental, special, or consequential damages of any nature under any legal theory. Any act or failure to act based on a reading from SoberUp shall be at the User’s own risk or upon those who rely upon such reading. AlumniLikeTurtles assumes no responsibility for consequences to, or of, Users who use SoberUp and later are shown to have been under the influence of alcohol or have had their judgment or any mental or bodily function impaired by alcohol. Correlation between number of standard drinks consumed and blood alcohol concentration depends on many variables, including health conditions of the User. A low BAC reading does not mean that the User’s physical or mental performance or judgment can respond to an emergency. The concentration of alcohol in the blood of a User cannot be exactly determined by using a mathematical formula. AlumniLikeTurtles does not warrant that the operation of SoberUp will be error-free. AlumniLikeTurtles is not responsible for any consequences arising from the failure to follow instructions related to the use of SoberUp. Because of the variables involved in the dissipation of alcohol consumption, individual metabolism, and self-administration, the User and associated third parties agree:
+
+                        1. not to hold AlumniLikeTurtles or its agent and representatives, the manufacturer, dealer, wholesaler, or distributor, responsible for the consequences of any decision, based on the use of SoberUp to operate a vehicle, boat, or aircraft or other equipment; and 
+
+                        2. to hold AlumniLikeTurtles or its agent and representatives harmless from the claims of others arising out of any such decision.
+
+                        TO THE EXTENT PERMITTED BY THE LAW, THIS WARRANTY AND THE REMEDIES SET FORTH ABOVE ARE EXCLUSIVE AND IN LIEU OF ALL OTHER WARRANTIES, REMEDIES AND CONDITIONS, WHETHER ORAL OR WRITTEN, STATUTORY, EXPRESS OR IMPLIED. AS PERMITTED BY APPLICABLE LAW, ALUMNILIKETURTLES SPECIFICALLY DISCLAIMS ANY AND ALL STATUTORY OR IMPLIED WARRANTIES OR MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE AND WARRANTIES AGAINST HIDDEN OR LATENT DEFECTS. IF ALUMNILIKETURTLES CANNOT LAWFULLY DISCLAIM STATUTORY OR IMPLIED WARRANTIES, THEN TO THE EXTENT PERMITTED BY LAW, ALL SUCH WARRANTIES SHALL BE LIMITED IN DURATION TO THE DURATION OF THE EXPRESS WARRANTY AND TO THE REPAIR OR REPLACEMENT SERVICE AS DETERMINED BY ALUMNILIKETURTLES IN ITS SOLE DISCRETION.
+
+                        EXCEPT AS PROVIDED IN THIS WARRANTY, AND TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALUMNILIKETURTLES IS NOT RESPONSIBLE FOR DIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES UNDER ANY LEGAL THEORY, INCLUDING BUT NOT LIMITED TO: LOSS OR USE; LOSS OF REVENUE OR INCOME LOSS OF ACTUAL OR ANTICIPATED PROFITS (INCLUDING LOSS OF PROFITS FROM A CONTRACT), LOSS OF THE USE OF MONEY LOSS OF ANTICIPATED SAVINGS; LOSS OF BUSINESS; LOSS OF OPPORTUNITY; LOSS OF GOODWILL; OR LOSS OF REPUTATION. Some countries, states, and provinces do not allow the exclusion or limitation of incidental or consequential damages, or allow limitations on how long an implied warranty or condition may last, so the above limitations or exclusions may not apply to you. This warranty gives you specific legal rights, and you may also have other rights that vary by country, state, or province. This Limited Warranty is governed by and construed under the laws of the country in which the product purchase took place.
                 button#acceptEULA.btn.btn-default.btn-success.btn-lg Accept
 
-        div#settings.hide
+        #settings.hide
             form.form-horizontal
-                div.form-group
+                .form-group
                     label.col-md-4.control-label Weight (lbs):
-                    div.col-md-8
-                        div#weight.slider(data-slider-id="weight-slider" data-slider-value=weight)
+                    .col-md-8
+                        #weight.slider(data-slider-id="weight-slider" data-slider-value=weight)
                         h4
-                            div#weight_val.label.label-primary 150
+                            #weight_val.label.label-primary 150
 
-                div.form-group
+                .form-group
                     label.col-md-4.control-label Gender:
-                    div.col-md-8
-                        div#gender.btn-group(data-toggle="buttons")
+                    .col-md-8
+                        #gender.btn-group(data-toggle="buttons")
                             if gender == 'male'
                                 label#male.btn.btn-default.btn-success.btn-lg.active Male
                                     input(type="radio")
@@ -36,4 +64,4 @@ block content
                                 label#female.btn.btn-default.btn-lg.btn-success.active Female
                                     input(type="radio")
 
-            div#save-btn.btn.btn-danger.btn-lg Save
+            #save-btn.btn.btn-danger.btn-lg Save
